@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* COLORS E FONTS */
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-main: 'Montserrat', sans-serif;
+    --font-s:'Fraunces', serif;
+}
+
+*,
+* ::after,
+* ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;      
+    min-height: 100vh;
+    font-family: var(--font-main);
+    background-color: var(--Cream);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer-CSS-Start */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;   
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/* Footer-CSS-End */
+
+@media(max-width: 1800px){
+/* Main-CSS-Start */
+    
+    main {
+        display: block; 
+        margin: auto;
+        background-color: var(--White);
+        border-radius: 25px;
+        max-width: 750px;
+        columns: 2;
+        margin-top: 150px;               
+    }
+
+    .sec-2 {
+        padding: 30px;
+    }
+
+    .divimg img {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+ 
+
+    .title h5 {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: var(--Dark-grayish-blue);
+        font-size: 1rem;
+    }
+
+    .title2 h1 {
+        font-family: var(--font-s);
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .title2 p {
+        color: var(--Dark-grayish-blue);
+        align-items: left;
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;        
+    }
+
+    .price h2 {
+        padding-right: 10px;
+        font-size: 2rem;
+        color: var(--Dark-cyan);
+        font-family: var(--font-s);
+    }
+
+    .price h6 {
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+             
+    }    
+
+    .add a {
+        display: flex;
+        justify-content: center;
+        background-color: var(--Dark-cyan);        
+        font-weight: 600;                
+        color: white;
+        border: none;  
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 15px 95px;
+        border-radius: 10px;
+        transition: all 250ms ease-in;                         
+    }
+
+    .add a:hover {
+        background-color: hsl(158, 36%, 21%);
+    }
+
+    .add img {        
+        margin-right: 10px;               
+        width: 15px;
+        height: 16px;        
+    }
+    /* Main-CSS-End */  
+    
+}
+
+@media(max-width: 768px) {
+/* Main-CSS-Start */
+    body {
+        display: block;
+    }
+    main {
+        display: block;
+        margin: 25px 15px;
+        background-color: var(--White);
+        border-radius: 15px;
+        padding-bottom: 25px;
+        overflow-x: hidden;
+        columns: 1;
+    }
+
+    .sec-2 {
+        padding: 0;
+    }
+
+    .divimg img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .title, .title2, .price{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .title h5 {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: var(--Dark-grayish-blue);
+    }
+
+    .title2 h1 {
+        font-family: var(--font-s);
+    }
+
+    .title2 p {
+        color: var(--Dark-grayish-blue);
+        align-items: left;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;        
+    }
+
+    .price h2 {
+        padding-right: 10px;
+        font-size: 2rem;
+        color: var(--Dark-cyan);
+        font-family: var(--font-s);
+    }
+
+    .price h6 {
+        color: var(--Dark-grayish-blue);
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+             
+    }    
+
+    .add a {
+        display: flex;
+        justify-content: center;
+        background-color: var(--Dark-cyan);        
+        font-weight: 600;                
+        color: white;
+        border: none;  
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 15px 100px;
+        border-radius: 10px;
+        transition: all 250ms ease-in;                         
+    }
+
+    .add a:hover {
+        background-color: hsl(158, 36%, 21%);
+    }
+
+    .add img {        
+        margin-right: 10px;               
+        width: 15px;
+        height: 16px;        
+    }
+/* Main-CSS-End */
+}
